@@ -1,0 +1,49 @@
+/* From Uiverse.io by alshahwan */ 
+@use "variables" as *;
+
+.whatsapp {
+  background-color: #25D366;
+  border: 1px solid #25D366;
+  padding: 5px;
+  position: relative;
+  width: 6.2em;
+  height: 2em;
+  transition: 0.5s;
+  font-size: 17px;
+  border-radius: 0.4em;
+}
+
+.whatsapp p {
+  position: absolute;
+  top: 0.4em;
+  left: 1.15em;
+  margin: 0;
+  padding: 0;
+  transition: .5s;
+  color:white;
+}
+
+.whatsapp svg {
+  position: absolute;
+  top: 0.45em;
+  right: 0.5em;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  transition: 0.5s;
+  height: 1em;
+  fill: #fff
+}
+
+.whatsapp:hover p {
+  left: 0.5em;
+  color: #fff
+}
+
+.whatsapp:hover svg {
+  opacity: 1;
+}
+
+.whatsapp:hover {
+  background-color: #25D366;
+}

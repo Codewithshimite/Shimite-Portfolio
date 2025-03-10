@@ -1,0 +1,188 @@
+@use "variables" as *;
+
+form{
+  background-color: rgba(0, 0, 0, 0.279);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: auto;
+  height: auto;
+  max-height: fit-content;
+  border-radius: 8px;
+  align-content: center;
+  justify-content: center;
+}
+
+label{
+  display: none;
+}
+
+input, textarea{
+  border-radius: 2px; /* Adjust as needed */
+  border: 1px solid #ccc;
+  padding: 2%;
+  width: 90%;
+  box-sizing: border-box; 
+  margin: 7% 0 0 5%;
+
+}
+
+
+input:focus, textarea:focus {
+  border-color: #007bff; /* Change color on focus */
+  outline: none;
+  
+}
+
+textarea:focus{
+  height: 100px;
+}
+
+.send-message{
+  width: 80%;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 3%;
+  height: 3em;
+  // background-color: $primary-color;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  border-radius: 5px;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  gap: 5px;
+  border: 3px solid $primary-color;
+  
+}
+
+
+
+
+/* From Uiverse.io by mrhyddenn */ 
+/* From Uiverse.io by nikk7007 */ 
+.best {
+  padding: 0.8em 1.8em;
+  border: 2px solid $primary-color;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: .3s;
+  z-index: 1;
+  font-family: inherit;
+  color: white;
+ }
+ 
+ .best::before {
+  content: '';
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: $primary-color;
+  transition: .5s ease;
+  display: block;
+  z-index: -1;
+ }
+ 
+ .best:hover::before {
+  width: 105%;
+ }
+ 
+ .best:hover {
+  color: #111;
+ }
+ 
+
+@keyframes rotate {
+  0% {
+    transform: rotateY(180deg);
+  }
+
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+
+
+
+
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+.required-error{
+  z-index: 3;
+  display: block !important;
+  width: 90%;
+  color: red;
+  text-align: center;
+  margin: 0 0 0 5%;
+  animation: shake 0.3s ease-in-out;
+  
+}
+
+
+@media (max-width: 991px){
+
+  form{
+    width: auto;
+    // background-color: red;
+  }
+ 
+input, textarea{
+  border-radius: 2px; /* Adjust as needed */
+  border: 1px solid #ccc;
+  padding: 2%;
+  width: 90%;
+  box-sizing: border-box; 
+  margin: 7% 0 0 0% 5%;
+ 
+  
+}
+
+.send-message{
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 10%;
+  margin-bottom: 3%;
+}
+
+.required-error{
+  width: 88%;
+}
+
+
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 1024px){
+  form{
+    width:auto
+  }
+
+  // input, textarea{
+  //   border-radius: 2px; /* Adjust as needed */
+  //   border: 1px solid #ccc;
+  //   padding: 2%;
+  //   width: 80%;
+  //   box-sizing: border-box; 
+  //   margin: 7% 0 0 0 !important;
+   
+    
+  // }
+}

@@ -1,0 +1,250 @@
+@use "variables" as *;
+
+.blog-div-carrier{
+
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 3px;
+  justify-content:space-around;
+  margin-top: 3%;
+  align-items: center;
+  cursor:pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; // Smooth effect
+  &:hover{
+    transform: scale(1.05); 
+    box-shadow: 0 10px 10px rgba(209, 107, 107, 0.2); 
+    // background-color: rgb(10, 10, 10);
+  }
+  
+}
+
+
+
+.blog-own-images-div{
+  // border: 2px solid white;
+  margin-left: 5%;
+  width: 25%;
+  display: flex;
+  align-items: center;
+  
+}
+
+.blog-image-button-div{
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+  justify-content: center;
+  align-items: center;
+  margin-right:10%;
+  // border: 2px solid red;
+  width: 50%;
+  font-family: $primary-color;
+}
+
+.blog-card-image{
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+/*Modal designs*/
+.blog-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(21, 20, 21, 0.6) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  overflow: hidden; /* Prevents background scrolling */
+}
+
+.blog-modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 800px;
+  max-height: 80vh; /* Restricts modal height to 80% of viewport */
+  overflow-y: auto; /* Enables scrolling inside the modal */
+  text-align: left;
+  position: relative;
+}
+
+ .blog-image-inside{
+  width: 60%;
+
+ }
+/* Optional: Add smooth scrolling */
+
+
+
+.blog-modal-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.blog-modal-content::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.blog-modal-content::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.blog-close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
+/*Mobile*/
+
+@media (max-width: 768px){
+
+  .blog-div-carrier{
+
+    display: flex !important;
+    flex-direction: column-reverse !important;
+    gap: 3px;
+    justify-content:space-around;
+    margin-top: 5%;
+    align-items: center;
+    cursor:pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; // Smooth effect
+    // border: 2px solid pink;
+    &:hover{
+      transform: scale(1.05); 
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+      background-color: rgb(10, 10, 10);
+    }
+    
+  }
+  
+
+.blog-own-images-div{
+  // border: 5px solid white;
+  margin-left: -2%;
+  width: 90%;
+  position: relative;
+  
+}
+
+.blog-image-button-div{
+  display: flex;
+  flex-direction: row;
+  gap: 1%;
+  justify-content: center;
+  align-items: center;
+  // border: 2px solid red;
+  width: 80%;
+  font-family: $primary-color;
+  position: absolute;
+  left:12%;
+  
+}
+
+
+
+
+.blog-card-image{
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+.title-text{
+  font-size: 1em;
+  color: rgb(218, 19, 19) !important;
+  background-color: white;
+}
+
+}
+
+
+
+@media screen and (min-width: 600px) and (max-width:1024px){
+  .blog-div-carrier{
+
+    display: flex !important;
+    flex-direction: column-reverse !important;
+    gap: 3px;
+    justify-content:space-around;
+    margin-top: 5%;
+    align-items: center;
+    cursor:pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; // Smooth effect
+    // border: 2px solid pink;
+    &:hover{
+      transform: scale(1.05); 
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+      background-color: rgb(10, 10, 10);
+    }
+    
+  }
+  
+
+.blog-own-images-div{
+  // border: 5px solid white;
+  margin-left: -2%;
+  width: 90%;
+  position: relative;
+  
+}
+
+.blog-image-button-div{
+  display: flex;
+  flex-direction: row;
+  gap: 1%;
+  justify-content: center;
+  align-items: center;
+  // border: 2px solid red;
+  width: 90%;
+  font-family: $primary-color;
+  position: absolute;
+  left:7%;
+  font-size: larger;
+  font-weight: bold;
+  
+ 
+  
+}
+
+
+
+
+.blog-card-image{
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+.title-text{
+  font-size: 1.6em;
+  color: rgb(218, 19, 19) !important;
+  background-color: white;
+}
+}
+

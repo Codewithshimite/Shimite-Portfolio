@@ -1,0 +1,18 @@
+.typingText{
+  color: white;
+ font-family: "Josefin Sans";
+ font-style: italic;
+ margin-top: 40px;
+}
+
+
+@media (max-width: 991px) {
+ 
+ .typingText{
+  height: fit-content;
+  margin-top: 10px;
+ }
+  
+  }
+
+  

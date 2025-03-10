@@ -1,0 +1,130 @@
+@use "variables" as *;
+
+.form-body{
+//  background-color: rgb(68, 81, 68);
+ display: flex;flex-direction: row;
+ justify-content: space-between;
+ margin-top: 5%;
+}
+
+h2{
+  color: $primary-color;
+  font-weight: bold;
+}
+
+
+
+.get-intouch{
+display: flex;
+flex-direction: column;
+margin-top: 10%;
+margin-left: 5%;
+font-family: $nav-font-family;
+width: 40%;
+
+}
+
+.get-intouch > p{
+  color: white;
+  font-family: $nav-font-family;
+}
+
+.text-e{
+  color: $primary-color;
+  font-weight: bolder;
+  font-size: 20px;
+  font-family: $nav-font-family;
+}
+.envelope-image{
+  width: 3.5em;
+  font-family: $nav-font-family;
+}
+
+.email{
+  display: flex;
+  flex-direction: column;
+  font-family: $nav-font-family;
+}
+
+.envelope-email{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: fit-content;
+  font-family: $nav-font-family;
+
+}
+
+
+
+.location{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: fit-content;
+  margin-top: 5%;
+}
+
+
+
+
+.form-holder{
+width: 40%;
+margin-right: 15% !important;
+
+
+
+}
+
+
+
+
+@media (max-width: 768px){
+  .form-body{
+    flex-direction: column;
+    gap: 50px;
+  }
+
+
+  
+.get-intouch{
+  width: 100%;
+  margin-top: -10%;
+  margin-left: 2%;
+  }
+  
+  .form-holder{
+  width: 100%;
+  }
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 1280px){
+  .form-body{
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    margin-top: 5%;
+    // border: 2px solid red;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.get-intouch{
+    width: 90%;
+    margin-top: 1%;
+    margin-left: 2%;
+    // border: 2px solid white;
+    }
+
+    .form-holder{
+        width: 90%;
+        margin:0px auto ;
+        margin-left: 15% !important;
+        }
+    
+
+}

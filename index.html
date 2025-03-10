@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React + TS</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" 
+    crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./src/Styles.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+
+    <script>
+      $(document).ready(function() {
+  const text = `...Code is art, blending logic with creativity.`
+  var i = 0;
+
+  function typeText() {
+    $(".typingText").text('');  // Clear the text before starting new typing effect
+    i = 0;  // Reset the index to start typing again
+
+    function typeCharacter() {
+      if (i < text.length) {
+        $(".typingText").append(text.charAt(i));
+        i++;
+        setTimeout(typeCharacter, 100);  // Adjust typing speed
+      } else {
+        setTimeout(typeText, 1000);  // Wait 1 second before repeating
+      }
+    }
+
+    typeCharacter();
+  }
+
+  typeText();
+});
+function blinkButton() {
+  $(".scrol").fadeOut(3000).fadeIn(3000, blinkButton); // Faster blinking
+}
+
+$(document).ready(function () {
+  blinkButton();
+});
+
+
+
+
+ </script>
+  </body>
+</html>
+

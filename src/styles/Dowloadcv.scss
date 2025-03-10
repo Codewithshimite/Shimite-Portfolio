@@ -1,0 +1,46 @@
+@use "variables" as *;
+
+
+.resume{
+  margin-left: 10%;
+  cursor: pointer;
+  background-color: $primary-color;
+  width: 180px;
+  display: flex;
+  justify-content: center;
+  margin-top: 9%;
+  border-radius: 3px;
+  border: none;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none !important;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:black;
+  flex-direction: row;
+}
+
+.resume:hover {
+  background-color: #e82727;
+  width: 11rem;
+  transform: scale(1.2); 
+  transition: all 0.3s ease-in-out; 
+  
+}
+
+
+.donwload-logo{
+  margin-top: 5px !important;
+  margin-left: 50%;
+}
+
+
+
+
+
+
+
+.resume:hover{
+background-color:  #da2323;;
+}

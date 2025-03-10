@@ -1,0 +1,235 @@
+$nav-width: 4rem;
+$nav-font-family: "Josefin Sans";
+$nav-font-weight: bold;
+$primary-color: #ea4343;
+
+body {
+  background: rgba(0, 0, 0, 0.781);
+  padding: 20px;
+  width: 1200px;
+  margin: 0 auto;
+  font-family: $nav-font-family;
+ }
+
+ .main-root {
+  position: relative;
+  min-height: 100vh;
+  padding-top: 80px; // ✅ Pushes content below fixed navbar
+  display: block;
+  overflow: hidden;
+}
+
+
+
+
+
+
+@for $i from 1 through 6{
+  .text-#{$i} {
+    width: $nav-width !important;
+
+    &:hover {
+      color: $primary-color !important;
+    }
+  }
+}
+
+.active-link {
+  color: $primary-color !important;
+  font-weight: bold !important;
+}
+
+.hover-underline {
+  font-size: 1rem;
+  color: #ffffff;
+  position: relative;
+  display: inline-block;
+}
+
+ul {
+  text-decoration: none;
+}
+
+.hover-underline::after,
+.hover-underline::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, $primary-color, #bbacb0);
+  bottom: 3px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s ease-out;
+}
+
+
+.hover-underline::before {
+  top: 3px;
+  transform-origin: left;
+}
+
+.hover-underline:hover::after,
+.hover-underline:hover::before {
+  transform: scaleX(1);
+}
+
+.collapse {
+  transition: height 0.5s ease;
+}
+
+
+footer {
+  margin-top: 1%;
+  margin-left: -10%;
+  position: relative;
+}
+
+.scrol{
+  position: absolute;
+  top: 20%;
+  left: 85%;
+ 
+}
+
+
+.fa-arrow-down{
+  color: red !important;
+  transform: rotate(180deg);
+  border-radius: 2px;
+  border: none !important;
+}
+.scroll-up{
+  border-radius: 2px;
+  border:none;
+  transition: all 0.3s ease-in-out;
+}
+
+.scroll-up:hover{
+  background-color: white;
+  width: 3rem;
+  transform: scale(1.2); 
+  transition: all 0.3s ease-in-out; 
+}
+
+
+hr{
+  display: none;
+}
+
+.navbar{
+  position: fixed;
+  z-index: 1000;
+  height: fit-content;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  min-height: 20px; /* Adjust as needed */
+}
+
+
+
+/* Default navbar */
+.navbar {
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* When scrolling down */
+.scroll-down {
+  background-color: #2b2828 !important; /* Dark Gray */
+}
+
+
+
+
+
+
+
+.rounded-pill {
+  width: 5em
+}
+
+
+
+
+
+/* Navbar on desktop */
+@media (min-width: 992px) {
+  .navbar-collapse {
+    display: flex !important;
+    flex-direction: row;
+    
+  }
+
+  .navbar-toggler {
+    display: none;
+  }
+}
+
+/* Navbar on mobile */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    display: none;
+    // border-bottom: 1px solid $primary-color;
+  }
+
+  .navbar-toggler {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  .navbar-toggler:hover {
+    color: #ea4343;
+  }
+
+  .navbar-collapse.show {
+    display: block;
+  }
+
+hr{
+  display: block;
+  width:420px;
+  height: 6px;
+  background-color: $primary-color;
+  margin-left: -10px;
+  margin-top: -9px;
+}
+
+footer {
+  margin-top: -2%;
+  position: relative;
+}
+
+.navbar{
+  margin-bottom: 20px;
+ position: relative;
+}
+
+.scrol{
+  position: absolute;
+  top: 70%;
+  left: 75%;
+ 
+}
+
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 1024px){
+  .scrol{
+    position: absolute;
+    top: 30%;
+    left: 87%;
+   
+  }
+
+
+  footer {
+    
+    margin-left: -10%;
+    position: relative;
+  }
+
+
+}

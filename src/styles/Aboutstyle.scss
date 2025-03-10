@@ -1,0 +1,264 @@
+@use "variables" as *;
+
+
+
+
+.main-div{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+height: fit-content;
+// border: 2px solid red;
+position: relative;
+}
+
+.cv-div{
+  margin-left: 35% !important;
+
+  
+}
+
+
+.left-div{
+width: 40%;
+height: fit-content;
+// border: 1px solid red;
+margin-top: -90%;
+display: none;
+}
+
+.mid-div{
+ color:white;
+  width: 40%;
+  line-height: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+ margin: 1% 2% 1% 2%
+}
+
+.right-div{
+  // background-color: rgb(97, 97, 175);
+  width: 40%;
+  position: relative;
+  border: 2px solid red;
+  height: fit-content;
+  display: none;
+  
+ 
+}
+
+.reactImage{
+  width: 12em;
+  position:absolute;
+  top: 40%;
+  position: fixed;
+  opacity: 0.03;
+  border-radius: 100%;
+  right: 45%;
+  animation: spin 40s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.about-me{
+  color:#ee1a1a !important;
+  font-style: $nav-font-family;
+ margin: 0px auto;
+  font-size: 2.5rem !important;
+  display: block;
+  margin-top: 2%;
+  font-weight: bold;
+}
+
+.main-name{
+  color: $primary-color;
+  width: 30px;
+  font-weight: bold;
+}
+
+.frontend{
+  color: $primary-color;
+}
+
+
+
+
+
+
+.what-i-do{
+  margin-left: 40%;
+  margin-top: 10%;
+  font-size: 2.5rem;
+  color:  #ee1a1a;
+  font-weight: bold;
+ 
+}
+
+
+.fdev{
+  font-size: 1.5rem;
+  color: $primary-color;
+}
+
+.qa{
+  font-size: 1.5rem;
+  color: $primary-color;
+  margin-top: 5%;
+}
+
+.fa-download{
+  margin-top: 13px;
+  margin-left: 5px;
+}
+
+
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+/*Mobile view*/
+@media (max-width: 991px) {
+ 
+  .main-div{
+    flex-direction: column-reverse;
+  }
+
+  .mid-div{
+    order: 2;
+    width: 100%;
+    position: relative;
+  
+  }
+
+  .reactImage{
+    width: 12em;
+    position:absolute;
+    top: 40%;
+    position: fixed;
+    opacity: 0.03;
+    border-radius: 100%;
+    right: 28%;
+    animation: spin 40s linear infinite;
+  }
+
+  .cv-div{
+    margin-left: 18% !important;
+  }
+  
+.about-me{
+  font-size: 15px;
+
+}
+
+.what-i-do{
+  margin-left: 30%;
+}
+
+
+.about-me{
+  margin-top: -23%;
+}
+
+.information{
+  margin-left: 1% !important;
+}
+}
+
+
+
+
+/* ipad and tabs*/
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .right-div{
+    display: none;
+  }
+
+  .mid-div{
+    width: 100%;
+    position:relative ;
+    margin-top: -13%;
+
+  }
+
+
+  
+  .reactImage{
+    width: 12em;
+    position:absolute;
+    top: 40%;
+    position: fixed;
+    opacity: 0.03;
+    border-radius: 100%;
+    right: 38%;
+    animation: spin 40s linear infinite;
+  }
+
+  .cv-div{
+    margin-left: 30% !important;
+  
+    
+  }
+
+  .information{
+    margin-left: 1% !important;
+  }
+
+  
+}
+
+
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  /* Styles for all tablets */
+  .left-div{
+    // background-color: pink;
+    position: absolute;
+    display: block;
+    top: 20%;
+    opacity: 0.2;
+    left: 30%;
+    
+  }
+
+  .about-me{
+    color:$primary-color;
+    font-style: $nav-font-family;
+    margin: 0px auto;
+    font-size: 2.5rem;
+    display: block;
+    margin-top: 5%;
+  }
+
+
+  .main-div{
+    margin-top: 10% !important;
+  }
+
+  .information{
+    margin-left: 1% !important;
+  }
+
+ 
+  
+
+}

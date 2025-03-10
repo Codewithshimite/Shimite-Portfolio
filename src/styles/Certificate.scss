@@ -1,0 +1,147 @@
+@use "variables" as *;
+
+/* Portfolio Header */
+.portfolio-header {
+  text-align: center;
+  color: white;
+  padding-top: 1%;
+  font-style: $nav-font-family;
+  font-family: $nav-font-family;
+}
+
+/* Portfolio Container */
+.port-holder {
+  background-color: transparent;
+  padding: 50px 0;
+  position: relative;
+  margin-top: 1%;
+  text-align: center;
+}
+
+/* Decorative White Border */
+.white-space {
+  width: 920px;
+  height: 350px;
+  border: 2px solid white;
+  position: absolute;
+  left: -30px;
+  top: 60px;
+  display: inline-block;
+  z-index: -1;
+  display: none;
+}
+
+/* Grid Container for Portfolio */
+.flex-home {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 90%;
+  margin: 0 auto;
+  background-color: transparent;
+  padding: 10px;
+  justify-content: center;
+  position: relative;
+
+  /* Portfolio Items */
+  a.project-card {
+    position: relative;
+    display: block;
+    flex: 1 1 calc(33.33% - 20px); // 3 items per row on desktop
+    max-width: calc(33.33% - 20px);
+    border-radius: 8px;
+    text-decoration: none;
+    overflow: hidden;
+    height: 300px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    /* Caption - Appears on Hover */
+    .caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 50px;
+      background-color: rgba(255, 0, 0, 0.8);
+      color: white;
+      font-size: 10px;
+      font-weight: bold;
+      text-align: center;
+      line-height: 50px;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    &:hover {
+      img {
+        transform: scale(1.05);
+      }
+      .caption {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+/* Hide Scrollbars */
+.flex-home::-webkit-scrollbar {
+  display: none;
+}
+.flex-home {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 11 */
+}
+
+/* Mobile Styles */
+@media (max-width: 991px) {
+  .white-space {
+    display: none;
+  }
+
+  .portfolio-header {
+    margin-left: 0;
+  }
+
+  .port-holder {
+    margin-top: -10%;
+  }
+
+  .flex-home {
+    gap: 10px;
+    max-width: 100%;
+    height: auto;
+    justify-content: center;
+
+    a.project-card {
+      flex: 1 1 calc(100% - 40px); // 1 item per row
+      max-width: calc(100% - 40px);
+      height: 200px;
+    }
+  }
+
+
+  
+}
+
+/* Tablet Styles */
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .flex-home {
+    gap: 20px;
+    max-width: 100%;
+    height: auto;
+    justify-content: center;
+
+    a.project-card {
+      flex: 1 1 calc(50% - 20px); // 2 items per row
+      max-width: 100%;
+      height: 250px;
+    }
+  }
+}
