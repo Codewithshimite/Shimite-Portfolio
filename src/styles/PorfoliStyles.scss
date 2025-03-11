@@ -110,11 +110,19 @@
   -ms-overflow-style: none; /* Internet Explorer 11 */
 }
 
+
+
+
+
+
 /* Mobile Styles */
 @media (max-width: 991px) {
 
+.certification-div{
+  margin-top: 30%;
+}
   .port-holder {
-    margin-top: -2%;
+    margin-top: -12%;
   }
 
   .white-space {
@@ -163,11 +171,6 @@
   z-index: 2;
 }
 
-
-
-
-
-@media (max-width: 991px) {
   .caption {
     opacity: 1 !important;  /* Ensure visibility */
     height: 50px !important;
@@ -175,13 +178,17 @@
     align-items: center;
     justify-content: center;
   }
-}
+
 
    
 
     
   }
 }
+
+
+
+
 
 /* Tablet Styles */
 @media screen and (min-width: 600px) and (max-width: 1024px) {

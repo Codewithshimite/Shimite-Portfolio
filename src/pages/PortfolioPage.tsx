@@ -36,7 +36,6 @@ export default function PortfolioPage() {
           >
             <figure>
             <img src={project.imgSrc} alt={project.caption} />
-            {/* <figcaption>{project.caption}</figcaption> */}
             </figure>
             
             <div className="caption">{project.caption}</div> 
@@ -45,7 +44,10 @@ export default function PortfolioPage() {
       </div>
     </div>
     <Logos/>
-    <Certificate />
+    <div className="certification-div">
+      <Certificate />
+      </div>
+   
     <div>
 
     <div className="testimonial-div container-fluid">
