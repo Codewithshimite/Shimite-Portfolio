@@ -38,7 +38,7 @@ const SocialsNetworks = () => {
             <div className="tooltip">TikTok</div>
           </li>
           <li className="icon-content">
-            <a className="link" data-social="X" aria-label="X" href="https://X.org/" target='_blank'>
+            <a className="link" data-social="X" aria-label="X" href="https://x.com/shimwhizzy_Akej" target='_blank'>
             <svg width="100" height="100" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
   <path d="M18.29 2H21L13.06 10.91 22 22h-6.65l-5.72-7.13L5.85 22H3L11.47 12 2 2h6.82l5.24 6.55L18.29 2Z"/>
 </svg>
