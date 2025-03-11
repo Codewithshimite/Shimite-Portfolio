@@ -247,18 +247,18 @@ font-weight: bold;
 
 
 
+
 /* on mobile */
 @media (max-width: 768px) { 
   .mainDiv{
     display: flex;
     flex-direction: column;
-    // border:2px solid red;
     gap: 2%;
     margin-top: -20%;
   }
   
   .left{
-    // border: 2px solid white;
+
     width: 100%;
 
     .name{
@@ -320,13 +320,10 @@ font-weight: bold;
   .right{
     margin-top: -2%;
     width: 100%;
-    // display: none;
-    // border: 2px solid yellow;
 
     .red-line{
       display: none;
     }
-
 
 
 
@@ -342,6 +339,12 @@ font-weight: bold;
 
   .typingText{
     display: none;
+  }
+
+
+  .connect{
+    margin-top: 10%;
+    text-align: center;
   }
 
  }
@@ -447,6 +450,8 @@ font-weight: bold;
   
       .social-media-div-mobile{
         display: block;
+      
+       
       }
   
     }

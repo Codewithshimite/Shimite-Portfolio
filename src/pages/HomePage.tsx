@@ -49,7 +49,6 @@ export default function HomePage() {
             <div className="mt-3 messenger-div">
               <MessengerButton />
               <Tooltip />
-              {/* <RotApp /> */}
             </div>
             
 
@@ -74,8 +73,7 @@ export default function HomePage() {
         <div className="red-line">
         <img className="image" src={Pix} alt="Shimite's photo" />
         </div>
-        
-        
+                
         
         <div className="social-media-div-mobile">
         <p className="text-light connect">Cσɳɳҽƈƚ ɯιƚԋ ɱҽ σɳ:</p>
