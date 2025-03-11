@@ -78,7 +78,7 @@ export default function HomePage() {
         <div className="social-media-div-mobile">
         <p className="text-light connect">Cσɳɳҽƈƚ ɯιƚԋ ɱҽ σɳ:</p>
         <SocialsNetworks/>
-        <div className=""><FileDownload /></div>
+        <div className="d-file"><FileDownload /></div>
         </div>
         
         
