@@ -4,16 +4,15 @@ import "../styles/MovingLogo.scss";
 
 
 const logos = [
-  "public/images/html-5.png",
-   "public/images/css-3.png",
-  "public/images/js.png",
-  "public/images/typescript.png",
-  "public/images/bootstrap.png",
-  "public/images/sass.png",
-  "public/images/JQuery.png",
-  "public/images/atom.png"
-]
-
+  "/images/html-5.png",
+  "/images/css-3.png",
+  "/images/js.png",
+  "/images/typescript.png",
+  "/images/bootstrap.png",
+  "/images/sass.png",
+  "/images/JQuery.png",
+  "/images/atom.png"
+];
 
 
 const MovingLogos = () => {
