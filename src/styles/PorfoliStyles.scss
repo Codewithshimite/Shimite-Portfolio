@@ -111,7 +111,9 @@
 }
 
 
-
+.cert-mobile-view{
+  display: none;
+}
 
 
 
@@ -138,6 +140,12 @@
 
   }
 
+  .cert-mobile-view{
+    display: block;
+  }
+   .desktop-mobile-cert-hide{
+    display: none;
+   }
 
 
 
@@ -179,9 +187,15 @@
     justify-content: center;
   }
 
+ 
 
    
 
+    
+  }
+
+  .por {
+    display: block;
     
   }
 }

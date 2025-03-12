@@ -7,9 +7,13 @@ import card from "../images/card-detailPage.png";
 import polygon from "../images/rotating-polygon.png";
 import Logos from "./MovingLogo";
 import Certificate from "./Certifacate";
+import CertMobileComponent from "./CertMobile";
+
+
 
 
 import TestimonyCard  from "./Testimonial";
+
 export default function PortfolioPage() {
   const projects = [
     { id: 1, imgSrc: weda, caption: "Weather Report App", link: "https://codewithshimite.github.io/Weather-Forecast-app/" },
@@ -45,7 +49,13 @@ export default function PortfolioPage() {
     </div>
     <Logos/>
     <div className="certification-div">
+      <div className="desktop-mobile-cert-hide">
       <Certificate />
+      </div>
+      
+      <div className="cert-mobile-view">
+      <CertMobileComponent />
+      </div>
       </div>
    
     <div>

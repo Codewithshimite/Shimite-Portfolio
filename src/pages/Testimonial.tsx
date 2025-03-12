@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import avart from "../images/avatar-2-removebg-preview.png"
 import jimmy from "../images/jimmy.png"
 import Maranatha from "../images/maranatha-removebg-preview.png"
+import Joyce from "../images/Joyce-smile-removebg-preview (1).png"
 
 
 
@@ -35,11 +36,11 @@ const TestimonyCard  = () => {
 
        <div  style={{ '--r': 5 } as React.CSSProperties} className="glass">
        <div className='text-div'>
-       <img className="testi-image" src={avart} alt="Avatar" />
+       <img className="testi-image" src={Joyce} alt="Avatar" />
        <blockquote>
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam inventore, 
-          fugiat ipsam perspiciatis illum tempore hic excepturi amet magnam nesciunt,
-           porro unde! Veniam, impedit et delectus fuga qui laborum voluptatibus."
+          "Shimite is a self driven and self motivated programmer who 
+          has daily put in every effort to arrive at his current level of expertise.
+           Any team would be lucky to have him as a member as he's a full package of value."
          </blockquote>
          <p>
           <span>-Joyce</span>

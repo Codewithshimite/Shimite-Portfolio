@@ -12,6 +12,7 @@ const cert = [
 
 
 return (
+
   <>
       <div className="port-holder container-fluid">
       <h1 className="portfolio-header">Check My Certifications</h1>
