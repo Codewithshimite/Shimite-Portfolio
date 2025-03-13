@@ -104,7 +104,7 @@ const Modal: React.FC<{ Blog: BlogItem | null; onClose: () => void }> = ({ Blog,
           &times;
         </button>
         <div className="blog-image-inside"> <img className="blog-card-image" src={Blog.imgSrc} alt={Blog.header} /></div>
-        <h2>{Blog.header}</h2>
+        <h2 className="blog-header">{Blog.header}</h2>
         {/* {Blog.subHeader && <h3>{Blog.subHeader}</h3>} */}
         <p className="textModal">{Blog.text}</p>
         <p className="textModal">{Blog.content}</p>

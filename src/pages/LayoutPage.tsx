@@ -66,7 +66,7 @@ const LayoutPage = () => {
                   <NavLink to="/Shimite's-Blogs" className="nav-link text-light text-6 hover-underline">Blog</NavLink>
                 </li>
               </ul>
-              <hr /> {/* line on menu list in mobile view */}
+              {/* <hr /> line on menu list in mobile view */}
             </div>
           </div>
         </nav>
