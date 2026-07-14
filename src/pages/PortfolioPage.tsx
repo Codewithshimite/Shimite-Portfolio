@@ -20,7 +20,7 @@ export default function PortfolioPage() {
     
     { id: 1, imgSrc: weda, caption: "Weather Report App", link: "https://codewithshimite.github.io/Weather-Forecast-app/" },
     { id: 2, imgSrc: ecommerce, caption: "E-comerce Dashboard",  link: "https://codewithshimite.github.io/HNG-stage-two-web-shop/"  },
-    { id: 3, imgSrc: bmi, caption: "Bmi Calculator", link: "https://codewithshimite.github.io/BMI-calculator-by-codewithShimite/" },
+    { id: 3, imgSrc: bmi, caption: "Body mass index Calculator", link: "https://codewithshimite.github.io/BMI-calculator-by-codewithShimite/" },
     { id: 4, imgSrc: sorter, caption: "Word sorter", link: "https://codewithshimite.github.io/sorter/" },
     { id: 5, imgSrc: card, caption: "Card Detail page", link: "https://codewithshimite.github.io/card-detail-page/" },
     { id: 6, imgSrc: polygon, caption: "Rotating Polygon", link: "https://codewithshimite.github.io/Rotating-polygons/" },
