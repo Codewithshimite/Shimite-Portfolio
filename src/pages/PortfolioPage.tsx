@@ -2,6 +2,7 @@ import "../styles/PorfoliStyles.scss";
 import weda from "../images/weda repo.png";
 import ecommerce from "../images/ecommerce.png";
 import bmi from "../images/BMI.png";
+import renewberry from '../images/renewBerry.png'
 import sorter from "../images/sorter.png";
 import card from "../images/card-detailPage.png";
 import polygon from "../images/rotating-polygon.png";
@@ -16,12 +17,14 @@ import TestimonyCard  from "./Testimonial";
 
 export default function PortfolioPage() {
   const projects = [
+    
     { id: 1, imgSrc: weda, caption: "Weather Report App", link: "https://codewithshimite.github.io/Weather-Forecast-app/" },
     { id: 2, imgSrc: ecommerce, caption: "E-comerce Dashboard",  link: "https://codewithshimite.github.io/HNG-stage-two-web-shop/"  },
     { id: 3, imgSrc: bmi, caption: "Bmi Calculator", link: "https://codewithshimite.github.io/BMI-calculator-by-codewithShimite/" },
     { id: 4, imgSrc: sorter, caption: "Word sorter", link: "https://codewithshimite.github.io/sorter/" },
     { id: 5, imgSrc: card, caption: "Card Detail page", link: "https://codewithshimite.github.io/card-detail-page/" },
     { id: 6, imgSrc: polygon, caption: "Rotating Polygon", link: "https://codewithshimite.github.io/Rotating-polygons/" },
+    { id: 7, imgSrc: renewberry, caption: "renewBerry Social media Platform", link: "https://renewberry.io/" },
   ];
 
   return (

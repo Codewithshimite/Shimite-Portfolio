@@ -24,6 +24,8 @@ body {
 
 
 
+
+
 @for $i from 1 through 6{
   .text-#{$i} {
     width: $nav-width !important;
@@ -76,7 +78,15 @@ ul {
 }
 
 .collapse {
-  transition: height 0.5s ease;
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+
+  &.show {
+    max-height: 500px; // Adjust as needed
+    opacity: 1;
+  }
 }
 
 

@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import avart from "../images/avatar-2-removebg-preview.png"
 import jimmy from "../images/jimmy.png"
 import Maranatha from "../images/maranatha-removebg-preview.png"
 import Joyce from "../images/Joyce-smile-removebg-preview (1).png"
